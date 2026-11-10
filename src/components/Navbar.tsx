@@ -39,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <span>{profile.name}</span>
             <span className="hidden sm:inline text-xs font-normal text-slate-500 dark:text-slate-400">
-              · Operations & MIS
+              · Data Analyst & MIS
             </span>
           </a>
 

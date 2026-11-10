@@ -109,21 +109,21 @@ test('formatTabularNumber formats correctly', () => {
 
 test('generateResumeText produces structured readable resume content', () => {
   const profile: ProfileInfo = {
-    name: 'S. M. Salman',
-    title: 'Operations & MIS Professional',
-    tagline: 'Data Management Specialist',
-    summary: 'Seasoned Operations and MIS Specialist with 6+ years of expertise.',
-    email: 'contact@example.com',
-    phone: '+1 (555) 019-2834',
-    location: 'Chicago, IL',
+    name: 'Sandip Mondal',
+    title: 'Data Analyst | MIS & Reporting Executive',
+    tagline: 'Back-Office Operations Specialist',
+    summary: 'Analytical and detail-oriented graduate with professional certification in Office Management.',
+    email: 'sm1599718@gmail.com',
+    phone: '+91 78668 19391',
+    location: 'Kolkata, West Bengal, India',
     availability: 'Immediate',
-    linkedin: 'linkedin.com/in/example',
-    github: 'github.com/example',
-    yearsOfExperience: 6,
+    linkedin: 'linkedin.com/in/sandip-mondal-data-ops',
+    github: 'github.com/sandip-mondal-analytics',
+    yearsOfExperience: 3,
   };
 
   const text = generateResumeText(profile, [], []);
-  assert.ok(text.includes('S. M. SALMAN'));
+  assert.ok(text.includes('SANDIP MONDAL'));
   assert.ok(text.includes('EXECUTIVE SUMMARY'));
   assert.ok(text.includes('PROFESSIONAL EXPERIENCE'));
 });

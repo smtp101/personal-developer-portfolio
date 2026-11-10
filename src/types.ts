@@ -10,6 +10,10 @@ export interface ProfileInfo {
   linkedin: string;
   github: string;
   yearsOfExperience: number;
+  typingSpeed?: string;
+  languages?: string[];
+  workReadiness?: string;
+  resumePdfPath?: string;
 }
 
 export interface MetricStat {

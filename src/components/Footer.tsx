@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
         {/* Bottom Strip: Copyright & Channels */}
         <div className="pt-6 border-t border-slate-100 dark:border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
           <div>
-            © {currentYear} {profile.name}. All rights reserved. Professional Operations & MIS Portfolio.
+            © {currentYear} {profile.name}. All rights reserved. Data Analyst & MIS Portfolio.
           </div>
 
           <div className="flex items-center gap-4">

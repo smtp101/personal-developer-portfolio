@@ -68,8 +68,8 @@ export const PersonalizeDrawer: React.FC<PersonalizeDrawerProps> = ({
         </div>
 
         <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-          The master prompt specifies <code className="bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded font-mono">Name: [Your Full Name]</code>.
-          You can personalize your name, job title, and contact links below. Changes update across the website, navigation, hero, resume, and contact channels instantly.
+          Pre-configured with <strong className="font-semibold text-slate-800 dark:text-slate-200">Sandip Mondal</strong>'s verified CV credentials.
+          You can personalize candidate details, contact links, or headline below. Changes update across the website, navigation, hero, resume, and contact channels in real time.
         </p>
 
         <form onSubmit={handleSave} className="space-y-4">

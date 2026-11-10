@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Layers, Database, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { Target, Layers, Database, ShieldCheck, Clock, Languages, Zap } from 'lucide-react';
 import { ProfileInfo } from '../types';
 import { CORE_STRENGTHS } from '../data/portfolioData';
 
@@ -10,28 +10,28 @@ interface AboutProps {
 export const About: React.FC<AboutProps> = ({ profile }) => {
   const pillars = [
     {
-      icon: Layers,
-      title: 'Back-Office Operations Governance',
+      icon: Zap,
+      title: 'High-Volume Data Processing (80+ WPM)',
       description:
-        'Standardizing daily operational execution across high-volume transaction centers. Structuring rigorous SOP workflows and SLA escalation protocols that eliminate execution delays.',
+        'Touch-typing speed exceeding 80+ words per minute with 99%+ accuracy. Specialized in rapid numeric keying, transactional data entry, and audit reconciliations under tight operational turnarounds.',
+    },
+    {
+      icon: Layers,
+      title: 'Power BI & Advanced Excel Modeling',
+      description:
+        'Architecting interactive multi-page Power BI dashboards with DAX calculated measures, star-schema data modeling, Power Query automated ETL pipelines, and advanced Excel formulas (XLOOKUP, Dynamic Arrays).',
     },
     {
       icon: Database,
-      title: 'Data Architecture & Integrity',
+      title: 'OCR Digitization & Data Auditing',
       description:
-        'Enforcing stringent validation rules (Poka-Yoke error proofing) and three-way reconciliation models that ensure 99.85%+ audit accuracy between ERP general ledgers and operational logs.',
+        'Digitizing unstructured physical document logs, invoices, and forms into normalized tabular databases, maintaining a verified 99.4% quality score and eliminating duplicate entries.',
     },
     {
-      icon: Target,
-      title: 'Automated MIS & Decision Support',
+      icon: Clock,
+      title: '24/7 Shift Readiness & SLA Governance',
       description:
-        'Architecting automated Power Query ETL pipelines and dynamic Excel cockpits that consolidate disparate branch data in seconds, delivering clear visibility to leadership.',
-    },
-    {
-      icon: ShieldCheck,
-      title: 'Cost Optimization & Root Cause Audits',
-      description:
-        'Pinpointing operational bottlenecks, inventory carrying dead-stock, and vendor variance anomalies to recover lost working capital and streamline expenditures.',
+        'Immediate joiner with high adaptability to 24/7/365 corporate and BPO/KPO rotational shifts, strict SLA adherence, confidential PII data governance (GDPR compliance awareness), and cross-functional reporting.',
     },
   ];
 
@@ -43,14 +43,14 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
             <span>01</span>
             <span aria-hidden="true">·</span>
-            <span>Professional Profile</span>
+            <span>Professional Profile & Operational Benchmarks</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-50 tracking-tight">
-            About Me & Operational Philosophy
+            About Me & Operational Readiness
           </h2>
           <p className="mt-3 text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-            Delivering audit-grade reporting, eliminating manual toil through automated pipelines,
-            and establishing operational clarity across multi-branch enterprise environments.
+            Analytical, detail-oriented graduate with professional certification in Office Management,
+            delivering high-speed data integrity, Power BI visualization, and reliable 24/7 back-office operational execution.
           </p>
         </div>
 
@@ -58,37 +58,54 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-14">
           <div className="lg:col-span-7 space-y-5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
             <p>
-              I am an Operations & MIS Professional with over six years of dedicated experience
-              in corporate reporting frameworks, high-throughput back-office data management, and
-              process engineering. My career has focused on resolving the critical friction point where
-              raw operational data meets executive strategy.
+              I am a <strong>Data Analyst, MIS Executive, and Back-Office Operations Specialist</strong> based in Kolkata, West Bengal (ready for on-site roles in Sector V, New Town, or remote/hybrid engagements).
+              I hold a Bachelor of Arts in History (Cum Laude, Academic Research Thesis) from University of Kalyani alongside a professional <strong>Diploma in Office Management (DOM)</strong> from Rashtriya Sarva Shiksha Abhiyan (RSSA).
             </p>
             <p>
-              Too often, growing organizations struggle with disparate legacy spreadsheets, error-prone
-              copy-paste habits, and delayed reporting cycles. My approach pairs deep technical mastery of
-              advanced Microsoft Excel (Dynamic Arrays, Power Query M-code, VBA macros) and relational databases (SQL, MS Access)
-              with pragmatic operational workflows. By turning fragmented transactional files into single-click automated models,
-              I provide leadership teams with timely, trusted figures they can bank on.
+              My professional edge combines rapid transactional speed—proven at <strong>80+ WPM with 99%+ accuracy</strong>—with modern Business Intelligence capabilities in <strong>Microsoft Power BI Desktop, DAX, Power Query ETL, SQL</strong>, and advanced Excel modeling.
+              Whether extracting dirty datasets, digitizing physical archives via OCR with 99.4% audit quality, or tracking 38M+ simulated revenue metrics in multi-branch dashboards, I deliver audit-grade accuracy on every task.
             </p>
-            <div className="pt-2">
-              <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100 mb-2">
-                Career Objective
+            <div className="pt-2 space-y-2">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100">
+                Career Objective & Operational Availability
               </h3>
               <p className="text-sm text-slate-600 dark:text-slate-300">
-                To steer enterprise-scale Operations, MIS reporting infrastructure, or centralized Data Governance
-                teams where high-velocity accuracy, process optimization, and automated reporting systems drive
-                tangible cost savings and operational excellence.
+                Seeking a full-time <strong>Data Analyst, MIS Executive, or Back-Office Operations</strong> role where my high-speed data processing, analytical problem-solving, and Business Intelligence skillset can drive operational efficiency.
+                Available as an <strong>Immediate Joiner</strong> with full willingness for <strong>24/7/365 rotational shifts</strong>.
               </p>
+            </div>
+
+            {/* Language & Readiness Strip */}
+            <div className="pt-4 border-t border-slate-200 dark:border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+              <div className="space-y-1">
+                <span className="font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <Languages className="w-4 h-4 text-slate-600 dark:text-slate-400" />
+                  <span>Languages Spoken:</span>
+                </span>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Bengali (Native / Fluent) · English (Professional Working) · Hindi (Professional Working)
+                </p>
+              </div>
+
+              <div className="space-y-1">
+                <span className="font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                  <Clock className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                  <span>Shift Flexibility:</span>
+                </span>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Ready for 24/7/365 Rotational Corporate & BPO/KPO Shifts
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Right: Core Strengths Breakdown */}
+          {/* Right: Core Strengths Breakdown from CV */}
           <div className="lg:col-span-5 bg-slate-50 dark:bg-slate-900/60 rounded-2xl p-6 sm:p-7 border border-slate-200 dark:border-slate-800 space-y-4">
             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100">
-              Core Competencies & Strengths
+              Core Competencies & ATS Benchmarks
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Key domains of operational expertise supported by direct enterprise track record:
+              Key operational competencies validated by direct project outcomes & certifications:
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
@@ -105,16 +122,20 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
               ))}
             </div>
 
-            <div className="pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-600 dark:text-slate-400">
-              <span>Technical Interests:</span>
-              <span className="font-medium text-slate-800 dark:text-slate-200">
-                Power Query ETL · VBA · SQL Analytics
-              </span>
+            <div className="pt-3 border-t border-slate-200 dark:border-slate-800 space-y-1 text-xs text-slate-600 dark:text-slate-400">
+              <div className="flex justify-between">
+                <span>Location:</span>
+                <span className="font-medium text-slate-800 dark:text-slate-200">Kolkata, West Bengal (Sector V / New Town)</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Joining Status:</span>
+                <span className="font-medium text-emerald-700 dark:text-emerald-400">Immediate Availability</span>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* 4 Operational Pillars */}
+        {/* 4 Operational Pillars from CV */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {pillars.map((item, index) => {
             const IconComponent = item.icon;

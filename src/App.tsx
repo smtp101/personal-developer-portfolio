@@ -32,13 +32,16 @@ export default function App() {
     return false;
   });
 
-  // Profile data state (allows instant customization)
+  // Profile data state (defaults directly to Sandip Mondal's verified CV)
   const [profile, setProfile] = useState<ProfileInfo>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('portfolio_profile');
       if (saved) {
         try {
-          return JSON.parse(saved);
+          const parsed = JSON.parse(saved);
+          if (parsed && parsed.name === INITIAL_PROFILE.name) {
+            return parsed;
+          }
         } catch {
           // fallback
         }

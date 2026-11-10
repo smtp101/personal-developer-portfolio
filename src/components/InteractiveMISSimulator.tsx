@@ -139,9 +139,9 @@ export const InteractiveMISSimulator: React.FC = () => {
                   className="px-2.5 py-1 text-xs font-medium rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-slate-400"
                 >
                   <option value="All">All Regions (Consolidated)</option>
-                  <option value="North America">North America</option>
-                  <option value="EMEA">EMEA</option>
-                  <option value="APAC">APAC</option>
+                  <option value="Kolkata Central (Sector V)">Kolkata Central (Sector V)</option>
+                  <option value="Eastern Region (Bengal)">Eastern Region (Bengal)</option>
+                  <option value="Northern Hub">Northern Hub</option>
                 </select>
               </div>
 
